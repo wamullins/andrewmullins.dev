@@ -2,6 +2,7 @@
   color: white;
   width: 640px;
   margin: 0 auto;
+  padding: 90px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -10,42 +11,47 @@
 .topName {
   color: #E8E8E8;
   font-size: 64px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 .sectionHead {
   color: #E8E8E8;
   font-size: 24px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 .smallTitle {
   color: #E8E8E8;
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 .genText {
   color: #E8E8E8;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 /* about section styling */ 
 .about {
   display: flex;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 .profilePic {
   border-radius: 50%;
 }
+
+.aboutText {
+  margin-left:2%;
+  width:400px;
+}
+
+.aboutLinks > *{
+  margin-right: 2%;
+}
+
+
 
 /* nav styling */ 
 /* .links {
@@ -75,12 +81,14 @@
 
 /* Project Section Styling */
 
-.projGrid {
+.projList {
   display: flex;
   flex-direction: column;
+  margin-bottom: 64px;
 }
 
 .projDiv {
+  margin: 16px;
   border-radius: 8px;
   border: 1px solid #282828;
   height: 200px;
@@ -88,6 +96,16 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   overflow: hidden;
+}
+
+.projText {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projText > * {
+  margin-bottom: 8px;
 }
 
 .projPills > * {
@@ -99,11 +117,14 @@
   font-weight: 500;
   border-radius: 20px;
   background: #343434;
+  margin-right: 1%;
 }
 
 /* Contact Me section styling */
 
 .formStyle {
+  margin: 16px;
+  padding: 2%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -115,8 +136,13 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.formStyle > .inputStyle {
+  margin: 4px 0px 8px
+}
+
 .inputStyle {
   border: none;
+  color: #E8E8E8;
   border-radius: 4px;
   background: #343434;
   font-size: 10px;
@@ -126,7 +152,7 @@
 
 .buttonStyle {
   color:#E8E8E8;
-  font-size: 10px;
+  font-size: 12px;
   border-radius: 4px;
   border: 1px solid #282828;
   background: #343434;
@@ -136,22 +162,19 @@
 /* Footer.js styling */
 .footerDiv {
   background-color: #494949 ;
-  margin-top: 4vmin;
   height: 200px;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  position: relative;
-  bottom: 0;
 }
 
 .footerLinks {
-  width: 40vmin;
+  width: 512px;
   padding-top: 2vmin;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .footerLinks > a > img {

@@ -2,12 +2,12 @@ import styles from "../app/page.module.css";
 
 export const Contact = () => {
     const moreStyleEmail = {
-        height: "20px",
+        height: "30px",
         width: "130px",
     };
     const moreStyleMessage = {
-        width: "233px",
-        height: "127px",
+        width: "100%",
+        height: "100%",
     };
 
     return (

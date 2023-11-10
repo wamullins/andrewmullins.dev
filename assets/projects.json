@@ -1,24 +1,13 @@
 [
     {
-        "title": "Whac-A-Mole",
-        "key": 11,
-        "image":"/whacAmole.png",
-        "description":"Fun whac-a-mole game created with vanilla javascript. Image files created with Figma.",
-        "technology":["Javascript"],
+        "title": "El Capstone",
+        "key": 44,
+        "image":"/elCap.png",
+        "description":"El Capstone is an interactive face of El Capitan that lets users learn about various climbs on it's faces or log personal attempts and sends of the routes. All models created using THREE js (predominantly the react THREE fiber and drei libraries).",
+        "technology":["MongoDB", "Express", "Next", "Node"],
         "links": {
-            "git":"https://github.com/wamullins/whacAmole",
-            "deploy":"https://whacamoleproject.surge.sh/"
-        }
-    },
-    {
-        "title": "Brain Atlas",
-        "key": 22,
-        "image":"/brainAtlas.png",
-        "description":"Brain Atlas allows the user to search through the various structures in our brains using a visual interface and see information about each region. The main purpose of this project iss to tie together information from various sources through a navagatable, sketched brain model and allow users to add additonial research that they think is relevant. At each information page about a various region, the user is also given reseach articles that are related to this region of the brain. Any user can submit an article to be added to the database; however, first the article must be approved by an administrator through the admin portal. In the admin control page, an admin can search for articles by brain region or by unapproved status. THe admin can then choose whether or not to approve the article and have it show up or delete it (admin can also delete articles after they have been approved).",
-        "technology": ["MongoDB", "Express", "Node"],
-        "links": {
-            "git":"https://github.com/wamullins/BrainAtlas",
-            "deploy":"https://github.com/wamullins/BrainAtlas"
+            "git":"https://github.com/wamullins/elcapstone",
+            "deploy":"https://github.com/wamullins/elcapstone"
         }
     },
     {
@@ -33,14 +22,25 @@
         }
     },
     {
-        "title": "El Capitan",
-        "key": 44,
-        "image":"/elCap.png",
-        "description":"El Capstone is an interactive face of El Capitan that lets users learn about various climbs on it's faces or log personal attempts and sends of the routes. All models created using THREE js (predominantly the react THREE fiber and drei libraries).",
-        "technology":["MongoDB", "Express", "Next", "Node"],
+        "title": "Brain Atlas",
+        "key": 22,
+        "image":"/brainAtlas.png",
+        "description":"Brain Atlas allows the user to search through the various structures in our brains using a visual interface and see information about each region. The main purpose of this project iss to tie together information from various sources through a navagatable, sketched brain model and allow users to add additonial research that they think is relevant. At each information page about a various region, the user is also given reseach articles that are related to this region of the brain. Any user can submit an article to be added to the database; however, first the article must be approved by an administrator through the admin portal. In the admin control page, an admin can search for articles by brain region or by unapproved status. THe admin can then choose whether or not to approve the article and have it show up or delete it (admin can also delete articles after they have been approved).",
+        "technology": ["MongoDB", "Express", "Node"],
         "links": {
-            "git":"https://github.com/wamullins/elcapstone",
-            "deploy":"https://github.com/wamullins/elcapstone"
+            "git":"https://github.com/wamullins/BrainAtlas",
+            "deploy":"https://github.com/wamullins/BrainAtlas"
+        }
+    },
+    {
+        "title": "Whac-A-Mole",
+        "key": 11,
+        "image":"/whacAmole.png",
+        "description":"Fun whac-a-mole game created with vanilla javascript. Image files created with Figma.",
+        "technology":["Javascript"],
+        "links": {
+            "git":"https://github.com/wamullins/whacAmole",
+            "deploy":"https://whacamoleproject.surge.sh/"
         }
     }
 ]

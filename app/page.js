@@ -9,16 +9,12 @@ export default function Home() {
             <main className={styles.main}>
                 <div className={styles.topName}>Andrew Mullins</div>
                 <About />
-                <div id="projects">
-                    <h2 className={styles.sectionHead}>My Projects</h2>
-                    <div className={styles.projGrid}>
-                        <Projects />
-                    </div>
+                <div className={styles.sectionHead}>My Projects</div>
+                <div className={styles.projList}>
+                    <Projects />
                 </div>
-                <div id="contact">
-                    <h2 className={styles.sectionHead}>Contact Me</h2>
-                    <Contact />
-                </div>
+                <div className={styles.sectionHead}>Contact Me</div>
+                <Contact />
             </main>
             <Footer />
         </>
