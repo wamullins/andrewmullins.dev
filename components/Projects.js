@@ -2,12 +2,34 @@ import projectsArr from "@/assets/projects.json";
 import styles from "../app/page.module.css";
 
 const Project = ({ title, image, description, technology, deployLink, repoLink }) => {
-    return <div className={...styles.projDiv} style={{backgroundImage: {image}}}>
-        {image}
 
-        
-        </div>;
+    const moreStyle = {
+        overflowY: "scroll",
+        maxHeight: "40%",
+    }
+
+    return (
+        <div className={...styles.projDiv}>
+            <img src={image} width="200" height="200"/>
+            <div>
+                <div className={styles.smallTitle}>{title}</div>
+                <div className={styles.genText} style={moreStyle} >{description}</div>
+                <a href={repoLink}>GitHub</a>
+                <div className={styles.projPills}>
+                    <Pills technology={technology}/>
+                </div>
+            </div>
+        </div>
+    )
 };
+
+const Pills = ({technology}) => {
+    return technology.map((tech) => (
+        <div className={styles.projPills}>{tech}</div>
+    ))
+}
+
+
 
 export const Projects = () => {
     return projectsArr.map((proj) => (
