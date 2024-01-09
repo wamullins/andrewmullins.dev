@@ -22,6 +22,9 @@ export const About = () => {
                     <a className={styles.genText} href="/Mullins_Resume_12_2023.pdf" target="_blank">
                         Resume
                     </a>
+                    <a className={styles.genText} href="https://portfolio-cube.vercel.app/" target="_blank">
+                        Portfolio Cube(In Progress)
+                    </a>
                 </div>
             </div>
         </div>
