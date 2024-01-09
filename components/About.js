@@ -19,7 +19,7 @@ export const About = () => {
                     <a className={styles.genText} href="https://github.com/wamullins" target="_blank">
                         GitHub
                     </a>
-                    <a className={styles.genText} href="/Mullins_Resume_11_2023.pdf" target="_blank">
+                    <a className={styles.genText} href="/Mullins_Resume_12_2023.pdf" target="_blank">
                         Resume
                     </a>
                 </div>
