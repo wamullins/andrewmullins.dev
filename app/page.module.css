@@ -222,7 +222,7 @@ margin-top: 12px;
 
 /* Mobile Styling */
 
-@media (max-width: 420px) {
+@media (max-width: 448px) {
   .main {
     width: 384px;
     padding: 0px;
