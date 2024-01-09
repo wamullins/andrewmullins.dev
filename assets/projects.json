@@ -4,7 +4,7 @@
         "key": 44,
         "image":"/elCap.png",
         "description":"El Capstone is an interactive face of El Capitan that lets users learn about various climbs on it's faces or log personal attempts and sends of the routes. All models created using THREE js (predominantly the react THREE fiber and drei libraries).",
-        "technology":["MongoDB", "Express", "Next", "Node"],
+        "technology":["MongoDB", "Express", "React", "Node"],
         "links": {
             "git":"https://github.com/wamullins/elcapstone",
             "deploy":"https://elcapstone-frontend-original.vercel.app/"
