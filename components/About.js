@@ -3,10 +3,10 @@ import styles from "../app/page.module.css";
 export const About = () => {
     return (
         <div className={styles.about} id="about">
-            <img className={styles.profilePic} src="/profile_picture_sq.png" width="147" height="147" />
+            <img className={styles.profilePic} src="/profile_picture_sq.png" width="256" height="256" />
             <div className={styles.aboutText}>
-                <div className={styles.smallTitle}>About Me</div>
-                <div className={styles.genText}>
+                <div className={styles.sectionHead}>About Me</div>
+                <div className={styles.bioText}>
                     I am a software engineer based just outside of Washington, DC in Chevy Chase, MD. From my previous
                     work in neuroscience research, I have strong skills in problem solving, data manipulation, team
                     collaboration, and public speaking. I am most interested in developing engaging, intuitive, and

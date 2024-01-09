@@ -15,9 +15,15 @@ const Project = ({ title, image, description, technology, deployLink, repoLink }
                 <div className={styles.genText} style={moreStyle}>
                     {description}
                 </div>
-                <a href={repoLink} target="_blank" className={styles.genText}>
-                    GitHub
-                </a>
+                <div>
+                    <a href={repoLink} target="_blank" className={styles.projLinks}>
+                        GitHub
+                    </a>
+                    <a href={deployLink} target="_blank" className={styles.projLinks}>
+                        Live Site
+                    </a>
+                </div>
+
                 <div className={styles.projPills}>
                     <Pills technology={technology} />
                 </div>
@@ -31,15 +37,19 @@ const Pills = ({ technology }) => {
 };
 
 export const Projects = () => {
-    return projectsArr.map((proj) => (
-        <Project
-            key={proj.key}
-            title={proj.title}
-            image={proj.image}
-            description={proj.description}
-            technology={proj.technology}
-            deployLink={proj.links.deploy}
-            repoLink={proj.links.git}
-        />
-    ));
+    return (
+        <div className={styles.projList}>
+            {projectsArr.map((proj) => (
+                <Project
+                    key={proj.key}
+                    title={proj.title}
+                    image={proj.image}
+                    description={proj.description}
+                    technology={proj.technology}
+                    deployLink={proj.links.deploy}
+                    repoLink={proj.links.git}
+                />
+            ))}
+        </div>
+    );
 };

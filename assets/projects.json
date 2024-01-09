@@ -7,7 +7,7 @@
         "technology":["MongoDB", "Express", "Next", "Node"],
         "links": {
             "git":"https://github.com/wamullins/elcapstone",
-            "deploy":"https://github.com/wamullins/elcapstone"
+            "deploy":"https://elcapstone-frontend-original.vercel.app/"
         }
     },
     {

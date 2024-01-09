@@ -11,29 +11,31 @@ export const Contact = () => {
     };
 
     return (
-        <form action="https://formspree.io/f/xeqboryr" method="POST" className={styles.formStyle}>
-            <div className={styles.genText} style={{ fontWeight: "600" }}>
-                Email
-            </div>
-            <input
-                type="email"
-                id="email"
-                className={styles.inputStyle}
-                style={moreStyleEmail}
-                placeholder="name@email.com"
-            />
-            <div className={styles.genText} style={{ fontWeight: "600" }}>
-                Message
-            </div>
-            <textarea
-                name="message"
-                className={styles.inputStyle}
-                style={moreStyleMessage}
-                placeholder="Dear Andrew..."
-            ></textarea>
-            <button type="submit" className={styles.buttonStyle}>
-                Send
-            </button>
-        </form>
+        <div className={styles.contactDiv}>
+            <form action="https://formspree.io/f/xeqboryr" method="POST" className={styles.formStyle}>
+                <div className={styles.genText} style={{ fontWeight: "600" }}>
+                    Email
+                </div>
+                <input
+                    type="email"
+                    id="email"
+                    className={styles.inputStyle}
+                    style={moreStyleEmail}
+                    placeholder="name@email.com"
+                />
+                <div className={styles.genText} style={{ fontWeight: "600" }}>
+                    Message
+                </div>
+                <textarea
+                    name="message"
+                    className={styles.inputStyle}
+                    style={moreStyleMessage}
+                    placeholder="Dear Andrew..."
+                ></textarea>
+                <button type="submit" className={styles.buttonStyle}>
+                    Send
+                </button>
+            </form>
+        </div>
     );
 };

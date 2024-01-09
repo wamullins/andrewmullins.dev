@@ -1,6 +1,6 @@
 .main {
   color: white;
-  width: 640px;
+  width: 1024px;
   margin: 0 auto;
   padding: 90px;
   display: flex;
@@ -38,17 +38,28 @@
   margin-top: 64px;
   margin-bottom: 64px;
 }
+
 .profilePic {
   border-radius: 50%;
 }
 
 .aboutText {
-  margin-left:2%;
-  width:400px;
+  margin-left: 2%;
+  width: 512px;
+}
+
+.bioText {
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.aboutLinks {
+margin-top: 12px;
 }
 
 .aboutLinks > *{
   margin-right: 2%;
+  font-size: 16px;
 }
 
 
@@ -82,8 +93,8 @@
 /* Project Section Styling */
 
 .projList {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* grid-template-columns: repeat(2, minmax(30px, 1fr)); */
   margin-bottom: 64px;
 }
 
@@ -108,6 +119,13 @@
   margin-bottom: 8px;
 }
 
+.projLinks {
+  color: #E8E8E8;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 8px;
+}
+
 .projPills > * {
   display: inline-flex;
   padding: 4px 8px;
@@ -122,13 +140,19 @@
 
 /* Contact Me section styling */
 
+.contactDiv {
+  width: 1024px;
+  display: flex;
+  justify-content: center;
+}
+
 .formStyle {
   margin: 16px;
   padding: 2%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 260px;
+  width: 768px;
   height: 254px;
   border-radius: 8px;
   border: 1px solid #282828;
