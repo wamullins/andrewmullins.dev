@@ -44,7 +44,7 @@
 }
 
 .aboutText {
-  margin-left: 2%;
+  margin-left: 8px;
   width: 512px;
 }
 
@@ -58,7 +58,7 @@ margin-top: 12px;
 }
 
 .aboutLinks > *{
-  margin-right: 2%;
+  margin-right: 8px;
   font-size: 16px;
 }
 
@@ -93,7 +93,8 @@ margin-top: 12px;
 /* Project Section Styling */
 
 .projList {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   /* grid-template-columns: repeat(2, minmax(30px, 1fr)); */
   margin-bottom: 64px;
 }
@@ -110,13 +111,21 @@ margin-top: 12px;
 }
 
 .projText {
-  padding: 2%;
+  padding: 8px;
   display: flex;
   flex-direction: column;
 }
 
 .projText > * {
   margin-bottom: 8px;
+}
+
+.projDesc {
+  color: #E8E8E8;
+  font-size: 12px;
+  font-weight: 400;
+  overflow-y: scroll;
+  max-height: 40%;
 }
 
 .projLinks {
@@ -141,7 +150,8 @@ margin-top: 12px;
 /* Contact Me section styling */
 
 .contactDiv {
-  width: 1024px;
+  width: 80%;
+  align-self: center;
   display: flex;
   justify-content: center;
 }
@@ -186,17 +196,15 @@ margin-top: 12px;
 /* Footer.js styling */
 .footerDiv {
   background-color: #494949 ;
-  height: 200px;
-  width: 100vw;
+  height: 256px;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .footerLinks {
   width: 512px;
-  padding-top: 2vmin;
   display: flex;
   justify-content: space-evenly;
 }
@@ -208,4 +216,116 @@ margin-top: 12px;
 
 .footerLinks > a > img:hover {
   box-shadow: .7vmin .7vmin 1vmin #a5a5a5;
+}
+
+
+
+/* Mobile Styling */
+
+@media (max-width: 420px) {
+  .main {
+    width: 384px;
+    padding: 0px;
+  }
+  
+  .topName {
+    font-size: 42px;
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  .sectionHead {
+    align-self: center;
+  }
+
+  /* about section styling */ 
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  
+  .aboutText {
+    margin-top: 32px;
+    margin-left: 0px;
+    width: 320px;
+    text-align: center;
+  }
+  
+  .aboutLinks > *{
+    margin: 8px;
+  }
+  
+  
+  /* nav styling */ 
+  /* .links {
+    position: fixed;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vmin;
+  }
+  
+  .links > * {
+    text-decoration: none;
+    text-justify: center;
+    padding-left: 2vmin;
+    color: gray;
+    font-size: 3vmin;
+  }
+  
+  .links > *:hover {
+    border-left: .8vmin solid #ffffff;
+    border-bottom: .4vmin solid #ffffff;
+    color: white;
+    height: 4vmin;
+    background: linear-gradient(0.2turn, #a0a0a0, transparent);
+  } */
+  
+  /* Project Section Styling */
+  
+  .projList {
+    margin-bottom: 32px;
+  }
+
+  .projDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 384px;
+  }
+  
+  .projText {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projText > * {
+    margin-bottom: 8px;
+  }
+
+  .projDesc {
+    max-height: 72px;
+  }
+
+  
+  /* Contact Me section styling */
+  
+  .contactDiv {
+    margin-bottom: 32px;
+  }
+  
+  
+  /* Footer.js styling */
+  .footerDiv {
+    height: 128px;
+  }
+  
+  .footerLinks > a > img {
+    height: 72px;
+  }
 }
