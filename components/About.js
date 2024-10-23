@@ -7,7 +7,7 @@ export const About = () => {
             <div className={styles.aboutText}>
                 <div className={styles.sectionHead}>About Me</div>
                 <div className={styles.bioText}>
-                    I am a software engineer based just outside of Washington, DC in Chevy Chase, MD. From my previous
+                    I am a software engineer based just outside of Philedelphia in Cherry Hill, NJ. From my previous
                     work in neuroscience research, I have strong skills in problem solving, data manipulation, team
                     collaboration, and public speaking. I am most interested in developing engaging, intuitive, and
                     appealing front-end interfaces as well as creating clean and efficient back-end architectures.
